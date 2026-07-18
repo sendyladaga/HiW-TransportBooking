@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HiW Corp Start New Request</title>
+
+<link rel="stylesheet" href="startnewrequest.css">
+
+</head>
+<body>
+
+    <header class="top-bar">
+        <div class="brand">
+        <img src="company logo.png" alt="Company Logo" class="logo">
+        <h2>TransportBooking</h2>
+        </div>
+
+      <div class="profile-container">
+      <div class="profile-circle" onclick="toggleMenu()">
+        LS
+      </div>
+
+      <div class="profile-dropdown" id="profileDropdown">
+        <div class="dropdown-item">My Profile</div>
+        <div class="dropdown-item">Sign Out</div>
+      </div>
+
+    </header>
+
+
+    <div class="page-layout">
+
+    <aside class="sidebar">
+      <p class="nav-item" onclick="window.location.href='home page.html'" style="cursor:pointer;"> 🏠︎ Home</p>
+      <p class="nav-item" onclick="window.location.href='trips_page.html'" style="cursor:pointer;"> ō͡≡o Trips</p>
+    </aside> 
+
+
+    <main class="main-content">
+
+      <button class="request-btn">New Request</button>
+      </section>
+
+      <section class="request-details">
+
+        <div class="form-row top-row">
+        <div class="form-group traveller-group">
+          <span class="icon">👤</span>
+          <label>Traveller</label>
+          <input type="text" value="">
+        </div>
+      </div>
+
+        <div class="form-row">
+        <div class="checkbox-group">
+          <label>This booking is for someone else</label>
+          <input type="checkbox" id="someoneElse">
+        
+        <div id="staffField" style="display:none;">
+          <input type="text" placeholder="Enter Staff Name">
+      </div>
+
+      </div>
+      </div>
+
+        <div class="line"></div>
+
+        <div class="form-row two-columns">
+        <div class="form-group">
+          <span class="icon">ℹ️</span>
+          <label>No. of Passengers <span>*</span></label>
+          <input type="number" value="">
+      </div>
+
+        <div class="form-group">
+          <span class="icon">📘</span>
+          <label>Budget Center <span>*</span></label>
+        <input type="text">
+      </div>
+    </div>
+
+        <div class="line"></div>
+
+        <div class="form-row two-columns">
+        <div class="form-group">
+          <span class="icon">🚙</span>
+          <label>Preferred Vehicle Type </label>
+        <select>
+          <option>Please select one</option>
+          <option>Sedan</option>
+          <option>Van</option>
+          <option>SUV</option>
+        </select>
+      </div>
+
+        <div class="form-group">
+          <span class="icon">💼</span>
+          <label>Purpose <span>*</span></label>
+        <select>
+          <option>Please select one</option>
+          <option>Official Meeting</option>
+          <option>Field Visit</option>
+          <option>Airport Transfer</option>
+        </select>
+      </div>
+    </div>
+
+        <div class="line"></div>
+
+      <div class="form-row">
+
+      <div class="checkbox-group luggage-group">
+        <span class="icon">🧳</span>
+        <label class="cargo-label">Cargo & Luggage</label>
+        <input type="checkbox">
+        </div>
+      </div>
+
+</section>
+
+
+<section class="journey-details">
+
+    <div class="journey-header">
+    <div class="journey-title">
+        <h3>Journey Details</h3>
+        <p>Configure your trip destinations, return options and schedule</p>
+    </div>
+
+    <div class="trip-type-container">
+        <label for="tripType">
+            Trip Type <span>*</span>
+        </label>
+
+        <select id="tripType">
+            <option value="">Please select one</option>
+            <option value="roundtrip">Round-trip</option>
+            <option value="oneway">One-way</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- ROUND TRIP -->
+    <div id="roundTripSection" style="display:none;">
+
+        <div class="form-row">
+        <div class="form-group">
+          <label>Pick-up Location <span>*</span></label>
+
+        <select>
+            <option value="">Please select one</option>
+                <option>Manila Office</option>
+                <option>Makati Office</option>
+                <option>Taguig Office</option>
+                <option>Ortigas Office</option>
+                <option>Rizal Office</option>
+        </select>
+        </div>
+
+        <div class="form-group">
+          <label>Destination <span>*</span></label>
+
+        <select>
+            <option value="">Please select one</option>
+                <option>Manila Office</option>
+                <option>Makati Office</option>
+                <option>Taguig Office</option>
+                <option>Ortigas Office</option>
+                <option>Rizal Office</option>
+                <option>NAIA Terminal 1</option>
+                <option>NAIA Terminal 2</option>
+                <option>NAIA Terminal 3</option>
+        </select>
+        </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group">
+                <label>Departure Date <span>*</span></label>
+                <input type="date">
+            </div>
+
+            <div class="form-group">
+                <label>Travel Time <span>*</span></label>
+                <input type="time" placeholder="00:00 AM/PM">
+            </div>
+        </div>
+
+        <div class="form-row">
+        <div class="form-group">
+          <label> Destination<span>*</span></label>
+
+        <select>
+            <option value="">Please select one</option>
+                <option>Manila Office</option>
+                <option>Makati Office</option>
+                <option>Taguig Office</option>
+                <option>Ortigas Office</option>
+                <option>Rizal Office</option>
+                <option>NAIA Terminal 1</option>
+                <option>NAIA Terminal 2</option>
+                <option>NAIA Terminal 3</option>
+        </select>
+        </div>
+
+        <div class="form-group">
+          <label>Return Location<span>*</span></label>
+
+        <select>
+            <option value="">Please select one</option>
+                <option>Manila Office</option>
+                <option>Makati Office</option>
+                <option>Taguig Office</option>
+                <option>Ortigas Office</option>
+                <option>Rizal Office</option>
+        </select>
+        </div>
+        </div>
+
+        <div class="form-row">
+
+        <div class="form-group">
+          <label>Return Date <span>*</span></label>
+            <input type="date">
+    </div>
+
+    <div class="form-group">
+        <label>Return Time <span>*</span></label>
+        <input type="time">
+    </div>
+
+</div>
+
+    </div>
+
+    <!-- ONE WAY -->
+    <div id="oneWaySection" style="display:none;">
+
+        <div class="form-row">
+        <div class="form-group">
+          <label>Pick-up Location <span>*</span></label>
+
+        <select>
+            <option value="">Please select one</option>
+                <option>Manila Office</option>
+                <option>Makati Office</option>
+                <option>Taguig Office</option>
+                <option>Ortigas Office</option>
+                <option>Rizal Office</option>
+        </select>
+        </div>
+
+        <div class="form-group">
+          <label>Destination <span>*</span></label>
+
+        <select>
+            <option value="">Please select one</option>
+                <option>Manila Office</option>
+                <option>Makati Office</option>
+                <option>Taguig Office</option>
+                <option>Ortigas Office</option>
+                <option>Rizal Office</option>
+                <option>NAIA Terminal 1</option>
+                <option>NAIA Terminal 2</option>
+                <option>NAIA Terminal 3</option>
+        </select>
+        </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group">
+                <label>Travel Date <span>*</span></label>
+                <input type="date">
+            </div>
+
+            <div class="form-group">
+                <label>Travel Time <span>*</span></label>
+                <input type="time">
+            </div>
+        </div>
+
+    </div>
+
+    <div class="trip-notes">
+        <label>Trip Notes</label>
+        <textarea placeholder="Enter trip notes here..."></textarea>
+    </div>
+
+    <div class="form-buttons">
+        <button type="submit" class="submit-btn">Submit</button>
+        <button type="button"
+        class="cancel-btn"
+        onclick="window.location.href='home page.html'">Cancel</button>
+    </div>
+
+</section>
+
+
+<script src="startnewrequest.js"></script>
+</body>
+</html>

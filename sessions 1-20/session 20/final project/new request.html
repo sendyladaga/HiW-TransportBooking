@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>START NEW REQUEST: TRANSPORT BOOKING</title>
+    <link rel="stylesheet" href="style-new request.css">
+</head>
+<body>
+    
+    <header class="top-bar">
+        <div class="brand">
+        <img src="company logo.png" alt="Company Logo" class="logo">
+        <h2>TransportBooking</h2>
+        </div>
+
+        <div class="profile-circle">LS</div>
+    </header>
+
+    <div class="page-layout">
+
+    <aside class="sidebar">
+      <nav>
+        <p>Home</p>
+        <p>Trips</p>
+
+        <div class="quick-title">QUICK ACTIONS</div>
+
+        <p class="active">＋ Book Trips</p>
+        <p>☆ Rate Trips</p>
+      </nav>
+    </aside>
+
+<main class="main-content">
+
+  <section class="request-details">
+
+    <div class="form-row top-row">
+      <div class="form-group traveller-group">
+        <span class="icon">👤</span>
+        <label>Traveller</label>
+        <input type="text" value="LADAGA, Sendy Grace">
+      </div>
+    </div>
+
+<div class="form-row">
+    <div class="form-group checkbox-group">
+        <label>This booking is for someone else</label>
+        <input type="checkbox" id="someoneElse">
+        
+<div id="staffField" style="display:none;">
+    <input type="text" placeholder="Enter Staff Name">
+</div>
+
+    </div>
+</div>
+
+    <div class="line"></div>
+
+    <div class="form-row two-columns">
+      <div class="form-group">
+        <span class="icon">ℹ️</span>
+        <label>No. of Passengers <span>*</span></label>
+        <input type="number" value="1">
+      </div>
+
+      <div class="form-group">
+        <span class="icon">📘</span>
+        <label>Budget Center <span>*</span></label>
+        <input type="text">
+      </div>
+    </div>
+
+    <div class="line"></div>
+
+    <div class="form-row two-columns">
+      <div class="form-group">
+        <span class="icon">🚙</span>
+        <label>Preferred Vehicle Type </label>
+        <select>
+          <option>Please select one</option>
+          <option>Sedan</option>
+          <option>Van</option>
+          <option>SUV</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <span class="icon">💼</span>
+        <label>Purpose <span>*</span></label>
+        <select>
+          <option>Please select one</option>
+          <option>Official Meeting</option>
+          <option>Field Visit</option>
+          <option>Airport Transfer</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="line"></div>
+
+    <div class="form-row">
+      <div class="form-group checkbox-group luggage-row">
+        <span class="icon">🧳</span>
+        <label>Cargo & Luggage</label>
+        <input type="checkbox">
+      </div>
+    </div>
+
+  </section>
+<div class="journey-layout">
+
+    <!-- LEFT COLUMN -->
+    <div class="left-column">
+
+        <section class="journey-card">
+
+            <div class="journey-header">
+
+                <div class="arrow-circle">➜</div>
+
+                <div>
+                    <h3>Journey Details</h3>
+
+                    <p>
+                        Configure your trip destinations,
+                        return options and schedule
+                    </p>
+                </div>
+
+                <div class="trip-type">
+                    <strong>One Way</strong>
+                    <small>Single</small>
+                </div>
+
+            </div>
+
+            <div class="journey-section">
+
+                <h4>● Your Journey</h4>
+
+                <div class="field-box">
+
+                    <label>
+                        Departure Location
+                        <span>*</span>
+                    </label>
+
+                    <input type="text"
+                    value="Manila - Office">
+
+                    <small>
+                        Choose where your journey begins
+                    </small>
+
+                </div>
+
+                <div class="field-box">
+
+                    <label>
+                        Destination
+                        <span>*</span>
+                    </label>
+
+                    <input
+                    type="text"
+                    value="Department of Foreign Affairs - Home Office">
+
+                    <div class="toggle-row">
+
+                        <span>
+                            Search External Location
+                        </span>
+
+                        <label class="switch">
+
+                            <input
+                            type="checkbox"
+                            checked>
+
+                            <span class="slider"></span>
+
+                        </label>
+
+                    </div>
+
+                    <small>
+                        Choose where your journey ends
+                    </small>
+
+                </div>
+
+                <div class="field-box">
+
+                    <label>
+                        Return Journey
+                    </label>
+
+                    <div class="toggle-row">
+
+                        <span>
+                            Toggle to add a return trip
+                            with reversed locations
+                        </span>
+
+                        <label class="switch">
+
+                            <input
+                            type="checkbox">
+
+                            <span class="slider"></span>
+
+                        </label>
+
+                    </div>
+
+                </div>
+
+                <div class="field-box">
+
+                    <label>
+                        Departure Location
+                        <span>*</span>
+                    </label>
+
+                    <input
+                    type="text"
+                    value="Department of Foreign Affairs - Home Office">
+
+                    <div class="toggle-row">
+
+                        <span>
+                            Search External Location
+                        </span>
+
+                        <label class="switch">
+
+                            <input
+                            type="checkbox"
+                            checked>
+
+                            <span class="slider"></span>
+
+                        </label>
+
+                    </div>
+
+                    <small>
+                        Should be same on where your
+                        journey begins
+                    </small>
+
+                </div>
+
+                <div class="field-box">
+
+                    <label>
+                        Return Destination
+                        <span>*</span>
+                    </label>
+
+                    <input
+                    type="text"
+                    value="Manila - Office">
+
+                    <small>
+                        Same as where your journey
+                        begins
+                    </small>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- PREVIEW ROUTE NASA BABA -->
+        <section class="preview-route-card">
+
+            <button class="preview-route-btn">
+                ⛓ Preview Route
+            </button>
+
+        </section>
+
+    </div>
+
+    <!-- RIGHT COLUMN -->
+    <section class="schedule-card">
+
+        <h4>
+            How would you like to schedule?
+        </h4>
+
+        <p class="schedule-description">
+            Choose whether you want to set your
+            departure time or arrival time.
+        </p>
+
+        <div class="schedule-option selected">
+
+            <input
+            type="radio"
+            checked
+            name="schedule">
+
+            <div>
+
+                <strong>
+                    Set departure time
+                </strong>
+
+                <p>
+                    When do you want to be picked up?
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="schedule-option">
+
+            <input
+            type="radio"
+            name="schedule">
+
+            <div>
+
+                <strong>
+                    Set arrival time
+                </strong>
+
+                <p>
+                    When do you want to be dropped off?
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="trip-date-section">
+
+            <label class="section-label">
+                Departure date &amp; time (UTC+8)
+            </label>
+
+            <div class="date-time-row">
+
+                <div class="date-box">
+                    📅
+                    <input type="date">
+                </div>
+
+                <div class="time-box">
+                    🕒
+                    <input type="time">
+                </div>
+
+            </div>
+
+            <small class="helper-text">
+                Select the date and time
+                you want to start your journey
+            </small>
+
+            <div class="arrival-box">
+
+                <p>Estimated arrival</p>
+
+                <strong>
+                    29/06/2026 14:07 (UTC+8)
+                </strong>
+
+                <span>
+                    Note: The timing of the trip may be adjusted
+                    by the Dispatcher to accommodate operational
+                    constraints.
+                </span>
+
+            </div>
+
+            <div class="trip-notes">
+
+                <label>
+                    Trip notes
+                </label>
+
+                <textarea
+                placeholder="Provide flight details ETA/ETD, meeting agenda, or any other information relevant to this trip."></textarea>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</div>
+
+
+
+    </main>
+
+  </div>
+
+</body>
+</html>

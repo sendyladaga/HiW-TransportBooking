@@ -1,0 +1,215 @@
+.top-bar {
+    min-height: 58px;
+    width: 100%;
+    background-color: white;
+    border-bottom: 1px solid #e5e5e5;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap:0;
+  margin-top:-13px;
+}
+
+.logo {
+    width: 180px;
+    height: auto;
+    margin-left: -10px;
+    margin-right:-20px;
+}
+
+.brand h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+}
+
+body{
+    margin:0;
+    font-family: Arial, sans-serif;
+    background:#f7f7f7;
+}
+
+/* BLUE SIGN IN BAR */
+.signin-banner{
+    background:#2da4db;
+    width:100%;
+    height:50px;
+    display:flex;
+    align-items:center;
+    margin-top: -30px;
+    position: relative;
+    z-index: 10;
+}
+
+.signin-banner h1{
+    margin-left:25px;
+    color:rgb(0, 0, 0);
+    font-size:30px;
+    font-weight:bold;
+}
+
+/* LOGIN AREA */
+.login-container{
+    display:flex;
+    justify-content:center;
+    margin-top:40px;
+}
+
+.login-form{
+    width:450px;
+}
+
+.form-group{
+    display:flex;
+    align-items:center;
+    margin-bottom:20px;
+}
+
+.form-group label{
+    width:120px;
+    font-weight:bold;
+}
+
+.form-group input{
+    flex:1;
+    padding:10px;
+    border:1px solid #dcdcdc;
+    font-size: 13px;
+}
+
+.signin-btn{
+    width: 265px;
+    margin-left: 155px;
+    padding: 12px;
+    background: #2da4db;
+    color: white;
+    border: none;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.signin-btn:hover{
+    background:#2477a4;
+}
+
+.links{
+    margin-top: 25px;
+}
+
+.links p{
+    font-size: 14px;
+    color: black;
+    text-decoration: underline;
+    margin: 5px 0;
+    cursor: pointer;
+}
+
+.links p:hover{
+    color: #2da4db;
+}
+
+/* =========================
+   TABLET (481px - 1023px)
+========================= */
+@media screen and (max-width: 1023px){
+
+    .login-form{
+        width:80%;
+        max-width:450px;
+    }
+
+    .signin-btn{
+        width:100%;
+        margin-left:0;
+    }
+
+    .form-group{
+        flex-direction:column;
+        align-items:flex-start;
+    }
+
+    .form-group label{
+        width:100%;
+        margin-bottom:5px;
+    }
+
+    .form-group input{
+        width:100%;
+        box-sizing:border-box;
+    }
+
+    .links{
+        text-align:left;
+    }
+}
+
+/* =========================
+   MOBILE (480px pababa)
+========================= */
+@media screen and (max-width: 480px){
+
+    .top-bar{
+        flex-direction:column;
+        align-items:center;
+        text-align:center;
+        padding:10px;
+    }
+
+    .brand{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .logo{
+        width:110px;
+        margin:0;
+    }
+
+    .brand h2{
+        font-size:20px;
+        margin-top:5px;
+    }
+
+    .signin-banner h1{
+        font-size:28px;
+        margin-left:15px;
+    }
+
+    .login-container{
+        padding:15px;
+    }
+
+    .login-form{
+        width:100%;
+    }
+
+    .form-group{
+        display:block;
+    }
+
+    .form-group label{
+        display:block;
+        width:100%;
+        margin-bottom:6px;
+    }
+
+    .form-group input{
+        width:100%;
+        box-sizing:border-box;
+    }
+
+    .signin-btn{
+        width:100%;
+        margin-left:0;
+    }
+
+    .links{
+        text-align:center;
+    }
+}
