@@ -24,7 +24,7 @@
 
       <div class="profile-dropdown" id="profileDropdown">
         <div class="dropdown-item">My Profile</div>
-        <div class="dropdown-item">Sign Out</div>
+        <div class="dropdown-item" onclick="window.location.href='/'">Sign Out</div>
       </div>
 
     </header>

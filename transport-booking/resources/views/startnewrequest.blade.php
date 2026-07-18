@@ -24,7 +24,7 @@
 
       <div class="profile-dropdown" id="profileDropdown">
         <div class="dropdown-item">My Profile</div>
-        <div class="dropdown-item">Sign Out</div>
+        <div class="dropdown-item" onclick="window.location.href='/'">Sign Out</div>
       </div>
 
     </header>
@@ -39,8 +39,7 @@
 
 
     <main class="main-content">
-      <form action="{{ route('trips.store') }}" method="POST">
-          @csrf
+      <form id="startNewRequestForm">
 
       <button type="button" class="request-btn">New Request</button>
       </section>
@@ -325,6 +324,20 @@
 
 </section>
 </form>
+
+<div id="successModal" class="modal-overlay">
+    <div class="modal-box">
+        <div class="modal-message">
+            <p>Your request has been submitted!</p>
+            <p>Please proceed to the Trips page to view or modify your request.</p>
+        </div>
+
+        <div class="modal-footer">
+          <button id="okButton" type="button"
+        onclick="window.location.href='/trips'">OK</button>
+        </div>
+    </div>
+</div>
 
 <script src="startnewrequest.js"></script>
 </body>

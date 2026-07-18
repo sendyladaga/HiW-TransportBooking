@@ -80,11 +80,19 @@ body {
 .dropdown-item {
     height: 60px;
     padding: 0 20px;
+    cursor: pointer;
+    transition: all 0.2s ease;
     display: flex;
     align-items: center;
     font-size: 14px;
     border-bottom: 1px solid rgba(0,0,0,0.08);
     box-sizing: border-box;
+}
+
+.dropdown-item:hover {
+    background-color: #e8f3ff;
+    color: #0078d4;
+    font-weight: 600;
 }
 
 .dropdown-item:last-child {
@@ -554,4 +562,50 @@ input[type="checkbox"]{
     .trip-type-container{
     width:100%;
     }
+}
+
+.modal-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.3);
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.modal-box {
+    width: 500px;
+    background: #fff;
+    border-radius: 4px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.modal-message {
+    padding: 40px;
+    text-align: center;
+    font-size: 22px;
+    color: #7a8899;
+    border-bottom: 1px solid #ddd;
+}
+
+.modal-footer {
+    padding: 15px;
+    text-align: right;
+}
+
+
+#okButton {
+    background-color: #19b394;
+    color: white;
+    border: none;
+    width: 90px;
+    height: 45px;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 4px;
+    cursor: pointer;
 }

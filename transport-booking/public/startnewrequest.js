@@ -22,3 +22,25 @@ tripType.addEventListener("change", function () {
 function toggleMenu() {
     document.getElementById("profileDropdown").classList.toggle("show");
 }
+
+document.addEventListener('DOMContentLoaded', function () {
+
+    const form = document.getElementById('startNewRequestForm');
+    const modal = document.getElementById('successModal');
+    const okButton = document.getElementById('okButton');
+
+    if (form) {
+        form.addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            modal.style.display = 'flex';
+        });
+    }
+
+    if (okButton) {
+        okButton.addEventListener('click', function () {
+            window.location.href = '/Trips';
+        });
+    }
+
+});

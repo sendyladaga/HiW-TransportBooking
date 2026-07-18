@@ -80,11 +80,19 @@ body {
 .dropdown-item {
     height: 60px;
     padding: 0 20px;
+    cursor: pointer;
+    transition: all 0.2s ease;
     display: flex;
     align-items: center;
     font-size: 14px;
     border-bottom: 1px solid rgba(0,0,0,0.08);
     box-sizing: border-box;
+}
+
+.dropdown-item:hover {
+    background-color: #e8f3ff;
+    color: #0078d4;
+    font-weight: 600;
 }
 
 .dropdown-item:last-child {

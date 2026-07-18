@@ -23,9 +23,6 @@ Route::get('/startnewrequest', function () {
     return view('startnewrequest');
 });
 
-
-
-
 // 2. Registration Logic
 Route::post('/newaccount', function (Request $request) {
     $request->validate([
@@ -79,12 +76,11 @@ Route::post('/logout', function (Request $request) {
 });
 
 Route::get('/trips', function () {
-    $trips = Trip::all();
+    $trips = collect();
 
     return view('trips', compact('trips'));
-})->middleware('auth')->name('trips');
+})->name('trips');
 
-use App\Http\Controllers\BookingController;
-
-Route::post('/submit-trip', [BookingController::class, 'store'])->name('trips.store');
-Route::get('/trips', [BookingController::class, 'index']);
+Route::get('/Trips', function () {
+    return redirect('/trips');
+});
