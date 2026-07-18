@@ -61,6 +61,6 @@
     </main>
     </div>
 
-<script src="home page.js"></script>
+<script src="homepage.js"></script>
 </body>
 </html>
