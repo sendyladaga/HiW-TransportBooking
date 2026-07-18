@@ -125,6 +125,106 @@ body{
     color: #2da4db;
 }
 
+/* =========================
+   TABLET (481px - 1023px)
+========================= */
+@media screen and (max-width: 1023px){
+
+    .login-form{
+        width:80%;
+        max-width:450px;
+    }
+
+    .signin-btn{
+        width:100%;
+        margin-left:0;
+    }
+
+    .form-group{
+        flex-direction:column;
+        align-items:flex-start;
+    }
+
+    .form-group label{
+        width:100%;
+        margin-bottom:5px;
+    }
+
+    .form-group input{
+        width:100%;
+        box-sizing:border-box;
+    }
+
+    .links{
+        text-align:left;
+    }
+}
+
+/* =========================
+   MOBILE (480px pababa)
+========================= */
+@media screen and (max-width: 480px){
+
+    .top-bar{
+        flex-direction:column;
+        align-items:center;
+        text-align:center;
+        padding:10px;
+    }
+
+    .brand{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .logo{
+        width:110px;
+        margin:0;
+    }
+
+    .brand h2{
+        font-size:20px;
+        margin-top:5px;
+    }
+
+    .signin-banner h1{
+        font-size:28px;
+        margin-left:15px;
+    }
+
+    .login-container{
+        padding:15px;
+    }
+
+    .login-form{
+        width:100%;
+    }
+
+    .form-group{
+        display:block;
+    }
+
+    .form-group label{
+        display:block;
+        width:100%;
+        margin-bottom:6px;
+    }
+
+    .form-group input{
+        width:100%;
+        box-sizing:border-box;
+    }
+
+    .signin-btn{
+        width:100%;
+        margin-left:0;
+    }
+
+    .links{
+        text-align:center;
+    }
+}
+
 </style>
 
 </head>

@@ -236,6 +236,122 @@ body {
   margin-bottom: 18px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.15);
 }
+
+/* ==================================
+   TABLET VIEW (481px - 1023px)
+================================== */
+@media screen and (max-width:1023px){
+
+    .page-layout{
+        flex-direction:column;
+    }
+
+    .sidebar{
+        width:100%;
+        min-height:auto;
+        display:flex;
+        justify-content:center;
+        gap:30px;
+        padding:15px;
+    }
+
+    .sidebar p{
+        margin:0;
+    }
+
+    .main-content{
+        width:100%;
+    }
+
+    .cards{
+        flex-direction:column;
+    }
+
+    .card{
+        width:100%;
+    }
+}
+
+/* ==================================
+   MOBILE VIEW (480px)
+================================== */
+@media screen and (max-width:480px){
+
+    .top-bar{
+        flex-direction:column;
+        align-items:center;
+        justify-content:center;
+        height:auto;
+        padding:10px;
+        text-align:center;
+    }
+
+    .brand{
+        flex-direction:column;
+        gap:5px;
+    }
+
+    .logo{
+        width:90px;
+        height:auto;
+        margin:0;
+    }
+
+    .brand h2{
+        font-size:18px;
+    }
+
+    .profile-circle{
+        margin-top:8px;
+    }
+
+    .page-layout{
+        flex-direction:column;
+    }
+
+    .sidebar{
+        width:100%;
+        min-height:auto;
+        display:flex;
+        justify-content:center;
+        gap:20px;
+        padding:10px;
+    }
+
+    .sidebar p{
+        font-size:14px;
+        margin:0;
+    }
+
+    .main-content{
+        width:100%;
+        padding:15px;
+        box-sizing:border-box;
+    }
+
+    .transport-box{
+        padding:15px;
+    }
+
+    .transport-box h1{
+        font-size:20px;
+    }
+
+    .request-btn{
+        width:100%;
+        font-size:12px;
+    }
+
+    .cards{
+        flex-direction:column;
+    }
+
+    .card{
+        width:100%;
+        box-sizing:border-box;
+    }
+}
+
 </style>
 
 </head>

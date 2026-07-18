@@ -216,6 +216,130 @@ select{
 select:valid{
     color:#000000;
 }
+
+/* ===================================
+   TABLET VIEW (481px - 1023px)
+=================================== */
+@media screen and (max-width:1023px){
+
+    .account-card{
+        width:90%;
+        padding:25px;
+    }
+
+    .captcha-box{
+        width:100%;
+        max-width:300px;
+    }
+
+    #captchaInput{
+        width:100%;
+        max-width:300px;
+        box-sizing:border-box;
+    }
+
+    .verify-btn{
+        margin-top:10px;
+    }
+
+    .button-row{
+        flex-wrap:wrap;
+    }
+}
+
+/* ===================================
+   MOBILE VIEW (480px pababa)
+=================================== */
+@media screen and (max-width:480px){
+
+    /* HEADER */
+    .top-bar{
+        flex-direction:column;
+        align-items:center;
+        text-align:center;
+        padding:10px;
+    }
+
+    .brand{
+        flex-direction:column;
+        align-items:center;
+        gap:5px;
+    }
+
+    .logo{
+        width:120px;
+        height:auto;
+    }
+
+    .brand h2{
+        font-size:22px;
+        margin:0;
+    }
+
+    /* BLUE BAR */
+    .signin-banner{
+        height:50px;
+    }
+
+    /* FORM CARD */
+    .account-page{
+        padding:10px;
+    }
+
+    .account-card{
+        width:100%;
+        padding:15px;
+        box-sizing:border-box;
+    }
+
+    .account-card h1{
+        font-size:28px;
+    }
+
+    /* LABELS */
+    .account-form label{
+        font-size:14px;
+    }
+
+    /* INPUTS */
+    .account-form input,
+    .account-form select{
+        width:100%;
+        box-sizing:border-box;
+    }
+
+    /* CAPTCHA */
+    .captcha-box{
+        width:100%;
+        max-width:none;
+    }
+
+    #captchaInput{
+        width:100%;
+        box-sizing:border-box;
+    }
+
+    .verify-btn{
+        width:100%;
+        margin-top:10px;
+        font-size:16px;
+    }
+
+    /* BUTTONS */
+    .button-row{
+        flex-direction:column;
+    }
+
+    .create-btn,
+    .cancel-btn{
+        width:100%;
+    }
+
+    .required-note{
+        text-align:left;
+    }
+}
+
 </style>
 
 </head>

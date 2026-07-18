@@ -405,6 +405,221 @@ input[type="checkbox"]{
     background-color: #777;
     color: white;
 }
+
+/* ===================================
+   TABLET
+=================================== */
+@media screen and (max-width:1023px){
+
+    .page-layout{
+        flex-direction:column;
+    }
+
+    .sidebar{
+        width:100%;
+        min-height:auto;
+        display:flex;
+        justify-content:center;
+        gap:30px;
+        padding:15px;
+    }
+
+    .main-content{
+        width:100%;
+        padding:15px;
+        box-sizing:border-box;
+    }
+
+    .top-row,
+    .form-row{
+        flex-direction:column;
+        gap:15px;
+    }
+
+    .form-group{
+        width:100%;
+    }
+
+    .form-group input,
+    .form-group select{
+        width:100%;
+        box-sizing:border-box;
+    }
+
+    .journey-details .form-row{
+        flex-direction:column;
+    }
+
+    .trip-type{
+        width:100%;
+        margin-top:15px;
+    }
+
+    .trip-type select{
+        width:100%;
+    }
+
+    .journey-header{
+    flex-direction:row;
+    justify-content:space-between;
+    }
+
+    .trip-type-container{
+    width:260px;
+    }
+}
+
+
+/* ===================================
+   MOBILE
+=================================== */
+@media screen and (max-width:480px){
+
+    .top-bar{
+        flex-direction:column;
+        height:auto;
+        padding:10px;
+        text-align:center;
+    }
+
+    .brand{
+        flex-direction:column;
+        gap:5px;
+    }
+
+    .logo{
+        width:90px;
+        margin:0;
+    }
+
+    .page-layout{
+        flex-direction:column;
+    }
+
+    .sidebar{
+        width:100%;
+        min-height:auto;
+        display:flex;
+        justify-content:center;
+        gap:20px;
+        padding:15px;
+    }
+
+    .nav-item{
+        font-size:18px;
+    }
+
+    .main-content{
+        width:100%;
+        padding:10px;
+        box-sizing:border-box;
+    }
+
+    .request-details,
+    .journey-details{
+        padding:15px;
+    }
+
+    .top-row,
+    .form-row{
+        flex-direction:column;
+        gap:15px;
+    }
+
+    .form-group{
+        width:100%;
+    }
+
+    .form-group label{
+        width:100%;
+        display:block;
+        margin-bottom:5px;
+    }
+
+    .form-group input,
+    .form-group select{
+        width:100%;
+        box-sizing:border-box;
+    }
+
+    .trip-type{
+        width:100%;
+        margin-top:15px;
+    }
+
+    .trip-type select{
+        width:100%;
+    }
+
+    .trip-notes textarea{
+        width:100%;
+        box-sizing:border-box;
+    }
+
+    .form-buttons{
+        flex-direction:column;
+    }
+
+    .submit-btn,
+    .cancel-btn{
+        width:100%;
+    }
+
+    .journey-header{
+    flex-direction:column;
+    }
+
+    .trip-type-container{
+    width:100%;
+    }
+}
+
+.modal-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.3);
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.modal-box {
+    width: 500px;
+    background: #fff;
+    border-radius: 4px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.modal-message {
+    padding: 40px;
+    text-align: center;
+    font-size: 22px;
+    color: #7a8899;
+    border-bottom: 1px solid #ddd;
+}
+
+.modal-footer {
+    padding: 15px;
+    text-align: right;
+}
+
+
+#okButton {
+    background-color: #19b394;
+    color: white;
+    border: none;
+    width: 90px;
+    height: 45px;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
 </style>
 
 </head>
